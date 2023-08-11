@@ -6,8 +6,9 @@
   "author": "",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && rm -rf .next/cache",
-    "start": "next start"
+    "build": "next build",
+    "start": "next start",
+    "export": "npm run build && next export && mv out _static"
   },
   "dependencies": {
     "dayjs": "^1.11.7",
