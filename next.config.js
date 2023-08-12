@@ -4,4 +4,12 @@ module.exports = {
     defaultLocale: 'en',
     localeDetection: false,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/',
+        destination: '/home',
+      },
+    ];
+  },
 }
